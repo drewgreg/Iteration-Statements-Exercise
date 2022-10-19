@@ -93,21 +93,40 @@
             }
         }
 
+        //Write a method to display the multiplication table
+        //(from 1 to 12) of a given integer
+        public static void MultiplyTable()
+        {
+            Console.WriteLine("Pick a number you would like to multiply");
+
+            int userInput1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine($"Your multiplication table for {userInput1} is:");
+
+            for (int number1 = 1; number1 < 13; number1++)
+            {
+                Console.WriteLine($"{userInput1} * {number1} = {userInput1 * number1}");
+                
+            }
+        }
+
         static void Main(string[] args)
         {
-            PrintThousand();
+            //PrintThousand();
 
-            Threes();
+            //Threes();
 
-            IsEqual(100, 100);
+            //IsEqual(100, 100);
 
-            EvenOrOdd(1001);
+            //EvenOrOdd(1001);
 
-            PosOrNeg(100);
+            //PosOrNeg(100);
 
-            OfVotingAge(10);
+            //OfVotingAge(10);
 
-            NumberCheck();
+            //NumberCheck();
+
+            MultiplyTable();
         }
     }
 }
